@@ -1,7 +1,6 @@
 import Header from "@/components/dashboard/Header";
 import Sidebar from "@/components/dashboard/Sidebar";
 import UsersTable from "@/components/dashboard/UsersTable";
-import { usersData } from "@/lib/data/users";
 
 export default function UsersPage() {
   return (
@@ -14,7 +13,7 @@ export default function UsersPage() {
             <h1 className="text-2xl font-bold text-gray-900">Users</h1>
             <p className="text-gray-600">Manage your application users and their permissions</p>
           </div>
-          <UsersTable users={usersData} />
+          <UsersTable />
         </main>
       </div>
     </div>
